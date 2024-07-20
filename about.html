@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpitha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #02071c;
+            color: rgb(140, 181, 181);
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #a1ccec;
+            text-decoration: none;
+        }
+
+        #about {
+            padding: 50px 20px;
+            background-color: #02071c;
+            color: rgb(140, 181, 181);
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .box {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-info{
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contact-info h4, .skills-list h4, .about-text h3, .about-text h4, .skills-list-container h4 {
+            color: #a20eec;
+         
+            height: 20px;
+          
+        }
+        .contact-info h4, .skills-list h4,  .skills-list-container h4 {
+            color: #a20eec;
+            box-shadow: 1px 2px 1px 2px #4c3252;
+            border-radius: 10px;
+            height: 20px;
+            background-color: #111;
+        }
+        .about-text p{
+            text-align: justify;
+        }
+        .box.contact-info h4{
+            text-align: center;
+        }
+
+        .contact-info a, .social-media a, .btn {
+            color: #a1ccec;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            text-align: center;
+            color: #3946be;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-media a:hover, .btn:hover {
+            filter: drop-shadow(0 0 10px #fdc);
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .skills-list li {
+            background-color: #6a1b9a;
+            
+            color: rgb(21, 160, 225);
+            padding:4px  10px;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #9c21a0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #535aae;
+            filter: drop-shadow(10px 10px 20px #fdc);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .box {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="name"><a href="#">Arpitha's Portfolio</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>   
+                <li><a href="contact.html" target="_parent">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        
+        <div class="about-content">
+            <div class="box contact-info">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:hrarpitha@gmail.com">hrarpitha@gmail.com</a></p><br>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/arpitha-hr-5bba0a296" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/arpiithahr22" target="_blank">GitHub</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <br>
+                </div>
+                <a href="cv.pdf" class="btn" target="_parent" onclick="message()">Download My CV</a>
+            </div>
+
+            <div class="box about-text">
+                <h3>Hi, I'm Arpitha!</h3>
+                <p>I'm a passionate Computer Science and Engineering student with a keen interest in frontend development and a love for learning new technologies. My curiosity drives me to experiment and continously improve my skills.</p>
+                <h4>Background</h4>
+                <p>I am currently pursuing my Bachelor's degree in Computer Science and Engineering.</p>
+            </div>
+
+            <div class="box skills-list-container">
+                <h4>Skills</h4>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Data structures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
